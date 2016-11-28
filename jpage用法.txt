@@ -1,19 +1,15 @@
-# jpage
 
-#
 //自动播放(轮播) 默认没有
 pause       : 4000,
 clickStop   : true
 
-#
 //分页显示页数
 midRange    : 6, //默认为5
 
-#
+
 //回调函数
 callback :function(){}
 
-#
 //动画效果 需要css支持 默认从左到右显示出
 animation :
 "flipInY"翻转显示
@@ -44,21 +40,17 @@ rotateInDownRight
 rotateInUpLeft
 rotateInUpRight
 
-#
 //每页几张图 默认10
 perPage:5
 
-#
 //以箭头形式上一张下一张(在图片两侧分布)
 previous    : "span.arrowPrev",
 next        : "span.arrowNext",
 
-#
 //显示第一页最后一页 true/false 都不会显示
 first       : "首页",
 last        : "last"
 
-#
 //删除分页器
     /* destroy pagination */
     $("button").click(function(){
@@ -69,7 +61,6 @@ last        : "last"
       $(this).remove();
     });
 
-#
 //页面跳转到
 /* when button is clicked */
     $("button").click(function(){
@@ -81,7 +72,6 @@ last        : "last"
 
     });
 
-#
 //懒加载
  /* initiate lazyload defining a custom event to trigger image loading  */
     $("ul li img").lazyload({
@@ -99,28 +89,26 @@ last        : "last"
       }
     });
 
-#
+
 startPage :1	//默认显示第几页
 startRange:1	//分页开头显示几页
 midRange:5 	//分页中间(主体)显示几页
 endRange:2	//分页结尾间显示几页
 
-#
 //是否可以滚动加载 默认false
 scrollBrowse   : true
 
-#
 //table方式显示 html需要用table写
 perPage : 10 //每页显示10条
 
-#
+
 //分页器显示为--  默认数字
 links       : "blank"   (分页器样式自己设置)
 
-#
 //title写法
 links       : "title"
 
+<!-- pages -->
      <div id="pageContainer">
         <!-- About page -->
         <div data-title="About">
